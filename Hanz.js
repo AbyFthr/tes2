@@ -2659,7 +2659,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 if (args.length == 0) return reply(`Link Nya Mana Tod\nContoh: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
 ini_url = args[0]
 get_mp4 = `https://api.lolhuman.xyz/api/tiktokwm?apikey=4b0007683e16a30016b9da01&url=${ini_url}`
-get_result = await fetchJson(get_mp3)
+get_result = await fetchJson(get_mp4)
 ini_buffer = await getBuffer(get_result.result.link)
 await Hanz.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih'})
 break
