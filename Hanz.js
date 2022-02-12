@@ -2655,14 +2655,19 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						fs.unlinkSync(median)
 				break           
 		  case 'tiktok':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-if (args.length == 0) return reply(`Link Nya Mana Tod\nContoh: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
-ini_url = args[0]
-get_mp4 = `https://api.lolhuman.xyz/api/tiktokwm?apikey=4b0007683e16a30016b9da01&url=${ini_url}`
-get_result = await fetchJson(get_mp4)
-ini_buffer = await getBuffer(get_result.result.link)
-await Hanz.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih'})
-break
+		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+		if (args.length < 1) return reply(`Linknya Mana Cuy?\nContoh : ${prefix + command} https://vt.tiktok.com/ZSenRhpPM/`)
+                    if (!isUrl) return reply(`ITU KAH LINKNYA?`)        	 				
+                    mess.wait
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
+                    ini_link0 = args[0]
+                    const data = await fetchJson(`https://api.lolhuman.xyz/api/tiktok?apikey=4b0007683e16a30016b9da01&url=${ini_link0}`)
+                    const { title, thumbnail, description, duration, link } = data.result
+                    let capt = `TIKTOK NO WATERMARK\n━━━━••━━━━━━━━••━━━━\n\n\nData Berhasil Didapatkan!\n\n▢- Title : *${title}*\n▢- Username / Nickname : *${data.result.author.username} / ${data.result.author.nickname}*\n▢- Duration : *${duration}*\n▢- LikeCount : *${data.result.statistic.diggCount}*\n▢- ShareCount : *${data.result.statistic.shareCount}*\n▢- CommentCount : *${data.result.statistic.commentCount}*\n▢- PlayCount : *${data.result.statistic.playCount}*\n▢- Descripttion : *${description}*`
+                    var buff = await getBuffer(link)
+                    reply('VIDEO TELAH DI DAPATKAN, TUNGGU SEBENTAR')
+                    Hanz.sendMessage(from, buff, video, {quoted: mek, caption: capt})
+                    break
 //~~~~~~~~~~~~~~~~~~~~~[18+ AREA]~~~~~~~~~~~~~~~~~~~~~//
 //LINK BOKEP DI BAWAH NYA
 case 'kodekeras':
