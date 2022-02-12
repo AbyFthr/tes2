@@ -127,9 +127,9 @@ virgam = fs.readFileSync(`./media/virgam.jpeg`)
 asutes = '©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么'
 fake = '𝙰𝚋𝚢𝙱𝚘𝚝𝚣么'
 xteam = 'afac56667190977a'
-lolkey = '.RADIO07'
+lolkey = '4b0007683e16a30016b9da01'
 HunterApi = 'Ikyy69'
-lolhuman = '.RADIO07'
+lolhuman = '4b0007683e16a30016b9da01'
 //~~~~~~~~~~~~~~~~~~~~~[MODUL EXPROTS]~~~~~~~~~~~~~~~~~~~~~//
 
 module.exports = Hanz = async (Hanz, mek, _welkom) => {
@@ -1255,7 +1255,7 @@ res = await Hanz.prepareMessageFromContent(from,{
 					 },
 						"contentText": `╭─❒ ⏤͟͟͞DOWNLOADER MENU
 │
-│◦➛${prefix}tiktoknowm
+│◦➛${prefix}tiktok
 │◦➛${prefix}tiktokaudio
 │◦➛${prefix}ytmp3
 │◦➛${prefix}ytmp4
@@ -2635,7 +2635,7 @@ case 'ttaudio':
               reply(mess.wait)
              if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
              ini_link = args[0]
-             get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=LOLKONTOL09&url=${ini_link}`)
+             get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=4b0007683e16a30016b9da01&url=${ini_link}`)
              Hanz.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: mek })
              break			
 case 'detikvn':
@@ -2654,11 +2654,11 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						Hanz.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: mek})
 						fs.unlinkSync(median)
 				break           
-		  case 'tiktoknowm':
+		  case 'tiktok':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 if (args.length == 0) return reply(`Link Nya Mana Tod\nContoh: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
 ini_url = args[0]
-ini_url = `https://api.lolhuman.xyz/api/tiktok?apikey=LOLKONTOL09&url=${ini_url}`
+ini_url = `https://api.lolhuman.xyz/api/tiktokwm?apikey=4b0007683e16a30016b9da01&url=${ini_url}`
 get_result = await fetchJson(ini_url)
 ini_buffer = await getBuffer(get_result.result.link)
 await Hanz.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe Abi TV'})
