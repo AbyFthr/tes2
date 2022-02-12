@@ -205,7 +205,7 @@ group: '*☒* Fitur ini hanya untuk *GRUP*'
 }
 }
 //FAKE TEXT BUTTON
-faketeks = 'ʜᴀɴᴢ々ᴏꜰᴄ'
+faketeks = '©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么'
 const isUrl = (url) => {
 return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
 }
