@@ -2658,10 +2658,10 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 if (args.length == 0) return reply(`Link Nya Mana Tod\nContoh: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
 ini_url = args[0]
-ini_url = `https://api.lolhuman.xyz/api/tiktokwm?apikey=4b0007683e16a30016b9da01&url=${ini_url}`
-get_result = await fetchJson(ini_url)
+get_mp4 = `https://api.lolhuman.xyz/api/tiktokwm?apikey=4b0007683e16a30016b9da01&url=${ini_url}`
+get_result = await fetchJson(get_mp3)
 ini_buffer = await getBuffer(get_result.result.link)
-await Hanz.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe Abi TV'})
+await Hanz.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih'})
 break
 //~~~~~~~~~~~~~~~~~~~~~[18+ AREA]~~~~~~~~~~~~~~~~~~~~~//
 //LINK BOKEP DI BAWAH NYA
