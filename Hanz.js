@@ -2856,15 +2856,7 @@ case 'bokep1':
         sendButtonLocation(from, 
         `YAHH SANGEAN📸
 *NIH BAHAN COLI BUAT KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/h2nygxbyb6n9cyo/VID-20210107-WA1468.mp4/file`,
- `©ԋαɳȥ々σϝƈ`, 
-{jpegThumbnail:fs.readFileSync(`./media/Bot.jpg`)}, 
-
-[{ buttonId: `${prefix}kkk`, buttonText: { displayText: 'GW SANGE DAN AKU BANGGA🗿' }, type: 1 }])
-break          
-case 'bokep2':
-        sendButtonLocation(from, 
-        `YAHH SANGEAN📸
-*NIH BAHAN COLI BUAT KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/pk8hozohzdc076c/VID-20210107-WA1466.mp4/file`,
+ KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/pk8hozohzdc076c/VID-20210107-WA1466.mp4/file`,
  `©ԋαɳȥ々σϝƈ`, 
 {jpegThumbnail:fs.readFileSync(`./media/Bot.jpg`)}, 
 
@@ -2975,7 +2967,6 @@ case 'bokep14':
 *NIH BAHAN COLI BUAT KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/x034q0s16u9vyhy/VID-20210107-WA1537.mp4/file`,
  `©ԋαɳȥ々σϝƈ`, 
 {jpegThumbnail:fs.readFileSync(`./media/Bot.jpg`)}, 
-
 [{ buttonId: `${prefix}kkk`, buttonText: { displayText: 'GW SANGE DAN AKU BANGGA🗿' }, type: 1 }])
 break
 case 'bokep15':
@@ -2983,15 +2974,14 @@ case 'bokep15':
         `YAHH SANGEAN📸
 *NIH BAHAN COLI BUAT KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/mgmynqghjnon2q7/VID-20210107-WA1533.mp4/file`,
  `©ԋαɳȥ々σϝƈ`, 
-{jpegThumbnail:fs.readFileSync(`./media/Bot.jpg`)}, 
-
-[{ buttonId: `${prefix}kkk`, buttonText: { displayText: 'GW SANGE DAN AKU BANGGA🗿' }, type: 1 }])
-break             
+{jpegThumbnail:fs.readFileSync(`./media/Bot.jp
+[{ buttonId: `${prefix}kkk`, buttonText: { displayText: 'GW SANGE DAN AKU B
+     
 			
 //~~~~~~~~~~~~~~~~~~~~~[BUGBOT RASA CACING]~~~~~~~~~~~~~~~~~~~~~//
 //PENETRAL KALO ADA BUG TINGGAL KETIK INI
-//BIAR VIRUS NYA KEPENDAM
-case 'penetral':
+//BIAR VIRUS NYA KEPENDA
+case 'penet
 reply(`${penawarbug}`)
 break
 //SEBENAR NYA INI GK GUNA SUMPAH
