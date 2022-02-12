@@ -2656,21 +2656,17 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 					hah = fs.readFileSync(median)
 						Hanz.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: mek})
 						fs.unlinkSync(median)
-				break           
-		  case 'tiktok':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+				break  
+case 'tiktok':
+				if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 		if (args.length < 1) return reply(`Linknya Mana Cuy?\nContoh : ${prefix + command} https://vt.tiktok.com/ZSenRhpPM/`)
-                    if (!isUrl) return reply(`ITU KAH LINKNYA?`)        	 				
-                    mess.wait
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
-                    ini_link0 = args[0]
-                    const data = await fetchJson(`https://api.lolhuman.xyz/api/tiktok?apikey=4b0007683e16a30016b9da01&url=${ini_link0}`)
-                    const { title, thumbnail, description, duration, link } = data.result
-                    let capt = `TIKTOK NO WATERMARK\n━━━━••━━━━━━━━••━━━━\n\n\nData Berhasil Didapatkan!\n\n▢- Title : *${title}*\n▢- Username / Nickname : *${data.result.author.username} / ${data.result.author.nickname}*\n▢- Duration : *${duration}*\n▢- LikeCount : *${data.result.statistic.diggCount}*\n▢- ShareCount : *${data.result.statistic.shareCount}*\n▢- CommentCount : *${data.result.statistic.commentCount}*\n▢- PlayCount : *${data.result.statistic.playCount}*\n▢- Descripttion : *${description}*`
-                    var buff = await getBuffer(link)
-                    reply('VIDEO TELAH DI DAPATKAN, TUNGGU SEBENTAR')
-                    Hanz.sendMessage(from, buff, video, {quoted: mek, caption: capt})
-                    break
+					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
+					reply(mess.wait)
+					anu = await fetchJson(`http://docs-jojo.herokuapp.com/api/tiktok_nowm?url=${args[0]}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buffer = await getBuffer(anu.result)
+					Hanz.sendMessage(from, buffer, video, {quoted: mek})
+					break        
 //~~~~~~~~~~~~~~~~~~~~~[18+ AREA]~~~~~~~~~~~~~~~~~~~~~//
 //LINK BOKEP DI BAWAH NYA
 case 'kodekeras':
@@ -2900,7 +2896,7 @@ case 'bokep5':
         sendButtonLocation(from, 
         `YAHH SANGEAN📸
 *NIH BAHAN COLI BUAT KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/us3f4j62emftbrf/VID-20210107-WA1463.mp4/file`,
- `©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么`, 
+ `©𝙰??𝚢𝙱𝚘𝚝𝚣么`, 
 {jpegThumbnail:fs.readFileSync(`./media/Bot.jpg`)}, 
 
 [{ buttonId: `${prefix}kkk`, buttonText: { displayText: 'GW SANGE DAN AKU BANGGA🗿' }, type: 1 }])
