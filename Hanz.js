@@ -2857,7 +2857,7 @@ case 'bokep1':
         `YAHH SANGEAN📸
 *NIH BAHAN COLI BUAT KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/h2nygxbyb6n9cyo/VID-20210107-WA1468.mp4/file`,
  KALIAN :v*\nLink Download \n\nhttps://www.mediafire.com/file/pk8hozohzdc076c/VID-20210107-WA1466.mp4/file`,
- `©ԋαɳȥ々σϝƈ`, 
+ `©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么`, 
 {jpegThumbnail:fs.readFileSync(`./media/Bot.jpg`)}, 
 
 [{ buttonId: `${prefix}kkk`, buttonText: { displayText: 'GW SANGE DAN AKU BANGGA🗿' }, type: 1 }])
