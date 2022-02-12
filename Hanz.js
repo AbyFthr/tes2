@@ -63,6 +63,8 @@ const _antivirtex = JSON.parse(fs.readFileSync('./database/antivirtex.json'))
 const setting = JSON.parse(fs.readFileSync('./media/setting.json'))
 const scommand = JSON.parse(fs.readFileSync('./database/scommand.json'))
 const _registered = JSON.parse(fs.readFileSync('./database/registered.json'))
+const sendVn = (teks) => {Hanz.sendMessage(from, teks, audio, {mimetype:"audio/mp4", ptt:true, quoted:kir,contextInfo: {forwardingScore: 508, isForwarded: true}})}
+akirasound = fs.readFileSync('./soundmu.mp3')
 ///~~~~~~~~~~~~~~~~~~~~~[STICKER CMD]~~~~~~~~~~~~~~~~~~~~~//
 const addCmd = (id, command) => {
 const obj = { id: id, chats: command }
@@ -626,6 +628,7 @@ but = [
 {buttonId: `${prefix}menucatalog`, buttonText: { displayText: '⎙ CATALOG MENU' }, type: 1 },
 ]
 sendButImage(from, teks, "©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么", gam, but)        
+sendVn(akirasound)
 break 
 case 'kontol': 
 let cok = Hanz.sendMessage(await m.getQuotedObj())
@@ -3712,7 +3715,7 @@ res = await Hanz.prepareMessageFromContent(from,{
 "inviteTime": "1640676120846",
 "groupName": `𝙰𝚋𝚢𝙱𝚘𝚝𝚣么🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥${virtex7(prefix)}😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠${api(prefix)}️️`,
 "thumbnail": virgam,           //INI JUGA GW TAMBAHIN VIRTEX BIAR GANAS WKWK ASu
-"caption": `BUG INVITE🎭 BY : 𝙰𝚋𝚢𝙱𝚘𝚝𝚣么`,
+"caption": `BUG INVITE🎭 BY : 𝙰??𝚢𝙱𝚘𝚝𝚣么`,
 "contextInfo": {
 "forwardingScore": 150,
 "isForwarded": true
