@@ -626,9 +626,8 @@ but = [
 {buttonId: `${prefix}command`, buttonText: { displayText: '⎙ MENU' }, type: 1 },
 {buttonId: `.allmenu`, buttonText: { displayText: '⎙ ALL MENU' }, type: 1 },
 {buttonId: `${prefix}menucatalog`, buttonText: { displayText: '⎙ CATALOG MENU' }, type: 1 },
-]
-sendButImage(from, teks, "©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么", gam, but)        
-sendVn(akirasound)
+sound = fs.readFileSync('./soundmu.mp3')
+sendButImage(from, teks, "©𝙰𝚋𝚢𝙱𝚘𝚝𝚣么", gam, but, sound)        
 break 
 case 'kontol': 
 let cok = Hanz.sendMessage(await m.getQuotedObj())
